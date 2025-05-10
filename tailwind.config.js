@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        transrobotics: ['SF TransRobotics Condensed', 'sans-serif'],
+        transrobotics: ['SF TransRobotics', 'sans-serif'],
         poppins: ["Poppins", "sans-serif"],
         bebasneue: ['Bebas Neue', 'sans-serif'],
       },
