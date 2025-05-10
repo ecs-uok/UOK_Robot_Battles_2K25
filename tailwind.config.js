@@ -4,11 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        krona: ["Krona One", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-        geliat: ["Geliat Alt Bold", "sans-serif"],
-        orbitron: ["Orbitron", "sans-serif"],
         transrobotics: ['SF TransRobotics Condensed', 'sans-serif'],
+        poppins: ["Poppins", "sans-serif"],
         bebasneue: ['Bebas Neue', 'sans-serif'],
       },
     },
