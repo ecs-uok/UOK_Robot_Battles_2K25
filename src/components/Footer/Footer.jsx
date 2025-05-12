@@ -41,7 +41,7 @@ function Footer() {
           href="/#contact"
           className="text-white text-base md:text-lg hover:text-blue-400 flex-1 text-center"
         >
-          Contact Us
+          Contact
         </a>
       </div>
 
