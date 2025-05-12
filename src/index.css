@@ -116,3 +116,7 @@ p {
     min-height: 30vh;
   }
 }
+
+html {
+  color-scheme: only light;
+}
