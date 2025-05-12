@@ -14,22 +14,16 @@ function Footer() {
           Home
         </a>
         <a
-          href="/#rules"
-          className="text-white text-base md:text-lg hover:text-blue-400 flex-1 text-center"
-        >
-          Rules
-        </a>
-        <a
           href="/#about"
           className="text-white text-base md:text-lg hover:text-blue-400 flex-1 text-center"
         >
           About
         </a>
         <a
-          href="/#prizes"
+          href="/#rules"
           className="text-white text-base md:text-lg hover:text-blue-400 flex-1 text-center"
         >
-          Prizes
+          Rules
         </a>
         <a
           href="/#timeline"
@@ -38,10 +32,16 @@ function Footer() {
           Timeline
         </a>
         <a
+          href="/#prizes"
+          className="text-white text-base md:text-lg hover:text-blue-400 flex-1 text-center"
+        >
+          Prizes
+        </a>
+        <a
           href="/#contact"
           className="text-white text-base md:text-lg hover:text-blue-400 flex-1 text-center"
         >
-          Contact
+          Contact Us
         </a>
       </div>
 
