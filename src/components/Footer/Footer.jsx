@@ -1,7 +1,7 @@
 import React from "react";
 import UniLogo from "/Branding/UniLogo.svg";
-import HomeLogo from "/Branding/Home-Logo.svg";
-import ClubLogo from "/club_logo.png";
+import HomeLogo from "/Branding/Home-Logo.png";
+import ClubLogo from "/Branding/club_logo.png";
 
 function Footer() {
   return (
