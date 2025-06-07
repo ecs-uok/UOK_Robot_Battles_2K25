@@ -11,16 +11,16 @@ const events = [
     image: "/Timeline/Icon1.png", // Updated image path
   },
   {
-    date: "2025 August 05",
+    date: "2025 July 15",
     title: "Registration closing",
     description:
-      "Don’t miss your chance to be part of the fiercest battle of the year. Finalize your team and register before it’s too late.",
+      "Don't miss your chance to be part of the fiercest battle of the year. Finalize your team and register before it's too late.",
     button: "Register Now Before Closing",
     buttonColor: "bg-red-500 hover:bg-red-600",
     image: "/Timeline/Icon2.png",
   },
   {
-    date: "2025 August 10",
+    date: "2025 July 20",
     title: "Workshop",
     description:
       "Join the official pre-battle workshop. Get guidance, tips, and insights from pros to level up your game.",
@@ -29,7 +29,7 @@ const events = [
     image: "/Timeline/Icon3.png",
   },
   {
-    date: "2025 August 30",
+    date: "2025 July 30",
     title: "Awareness Session",
     description:
       "Everything you need to know, from rules to strategies. Join us and gear up with confidence.",
@@ -175,7 +175,7 @@ function TimelineCard({ event, registerButtonRef }) {
   useEffect(() => {
     if (event.title === "Registration closing") {
       const interval = setInterval(() => {
-        const eventDate = new Date("2025-08-05T00:00:00");
+        const eventDate = new Date("2025-07-15T00:00:00");
         const now = new Date();
         const timeLeft = eventDate - now;
 
