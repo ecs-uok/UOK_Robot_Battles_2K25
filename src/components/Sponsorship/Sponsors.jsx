@@ -13,21 +13,21 @@ const sponsors = [
   },
   {
     id: 2,
-    name: "Sponsor B",
-    logo: sponsorLogo2,
-    link: "https://www.linkedin.com/company/codechefs123/",
-  },
-  {
-    id: 3,
     name: "Sponsor C",
     logo: sponsorLogo3,
     link: "https://www.linkedin.com/company/ieee-industrial-electronics-society-student-branch-chapter-university-of-kelaniya/",
   },
   {
-    id: 4,
+    id: 3,
     name: "Sponsor D",
     logo: sponsorLogo4,
     link: "https://www.linkedin.com/company/hacksl/",
+  },
+  {
+    id: 4,
+    name: "Sponsor B",
+    logo: sponsorLogo2,
+    link: "https://www.linkedin.com/company/codechefs123/",
   },
 ];
 
