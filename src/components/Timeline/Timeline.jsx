@@ -38,7 +38,7 @@ const events = [
     image: "/Timeline/Icon4.png",
   },
   {
-    date: "2025 September 05",
+    date: "2025 September 20",
     title: "Battle Day",
     description:
       "The bots are built, the arena awaits. Greatness shows no mercy. Only one will reign supreme",
