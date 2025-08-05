@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../../../public/Branding/Home-Logo.png"; // Adjust path as needed
 
-const Navbar = ({ registerButtonRef }) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("/#home");
 
@@ -107,15 +107,9 @@ const Navbar = ({ registerButtonRef }) => {
     }
   }, []);
 
-  const triggerHeroRegister = () => {
-    if (registerButtonRef && registerButtonRef.current) {
-      registerButtonRef.current.click();
-    }
-  };
-
   return (
     <nav className="fixed top-0 left-0 z-50 w-full bg-[#00000066] shadow-[0px_4px_4px_#00000040] backdrop-blur-[50px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(50px)_brightness(100%)] font-transrobotics">
-      <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-2 mx-auto max-w-8xl sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
@@ -142,16 +136,6 @@ const Navbar = ({ registerButtonRef }) => {
                 </NavLink>
               )
             )}
-          </div>
-
-          {/* Register Button */}
-          <div className="relative right-0 flex items-center">
-            <button
-              onClick={triggerHeroRegister}
-              className="bg-gradient-to-r text-white from-sky-500 to-sky-700 rounded-[54px] px-4 py-2 hover:bg-gradient-to-r hover:from-white hover:to-sky-400 hover:text-blue-600"
-            >
-              <div className="text-center text-xl font-normal">Register</div>
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -205,15 +189,6 @@ const Navbar = ({ registerButtonRef }) => {
               </NavLink>
             )
           )}
-          <button
-            onClick={() => {
-              triggerHeroRegister();
-              toggleMenu(); // Close the mobile menu after clicking
-            }}
-            className="w-full bg-gradient-to-r from-sky-500 to-sky-700 text-white rounded-full px-6 py-3 text-center shadow-lg hover:from-white hover:to-sky-400 hover:text-blue-600 transition duration-300"
-          >
-            Register
-          </button>
         </div>
       </div>
     </nav>
@@ -255,5 +230,7 @@ const NavLink = ({ to, children, activeLink, onClick }) => {
     </Link>
   );
 };
+
+
 
 export default Navbar;

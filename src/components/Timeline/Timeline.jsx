@@ -6,7 +6,7 @@ const events = [
     title: "Registration opening",
     description:
       "Start assembling your bots and your teams. Registrations open now for the ultimate robotics showdown.",
-    button: "Register",
+    button: "Registration Closed",
     buttonColor: "bg-blue-500 hover:bg-blue-600",
     image: "/Timeline/Icon1.png", // Updated image path
   },
@@ -170,30 +170,6 @@ function TimelineNode({ src }) {
 
 function TimelineCard({ event, registerButtonRef }) {
   // Accept registerButtonRef as a prop
-  const [countdown, setCountdown] = useState("");
-
-  useEffect(() => {
-    if (event.title === "Registration closing") {
-      const interval = setInterval(() => {
-        const eventDate = new Date("2025-08-05T00:00:00");
-        const now = new Date();
-        const timeLeft = eventDate - now;
-
-        if (timeLeft <= 0) {
-          clearInterval(interval);
-          setCountdown("Registration closed");
-        } else {
-          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
-          const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
-          const seconds = Math.floor((timeLeft / 1000) % 60);
-          setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
-        }
-      }, 1000);
-
-      return () => clearInterval(interval);
-    }
-  }, [event.title]);
 
   const triggerHomeRegister = () => {
     if (registerButtonRef && registerButtonRef.current) {
@@ -209,25 +185,20 @@ function TimelineCard({ event, registerButtonRef }) {
       <p className="text-xs md:text-base mb-3 font-poppins">
         {event.description}
       </p>
-      {event.title === "Registration closing" && (
-        <p className="text-xs md:text-base mb-3 font-poppins text-red-400">
-          Registration closing in : {countdown}
-        </p>
-      )}
       <div className="flex flex-col md:flex-row md:items-center md:space-x-2">
         {event.title === "Registration closing" ? (
           <button
-            onClick={triggerHomeRegister} // Trigger the home section's register button
-            className="bg-red-500 hover:bg-red-600 text-white font-poppins font-bold text-sm px-3 py-2 rounded transition"
+            className="bg-gray-500 text-white font-poppins font-bold text-sm px-3 py-2 rounded cursor-not-allowed opacity-50"
+            disabled
           >
-            {event.button}
+            Registration Closed
           </button>
         ) : event.title === "Registration opening" ? (
           <button
-            onClick={triggerHomeRegister} // Trigger the home section's register button
-            className="bg-blue-500 hover:bg-blue-600 text-white font-poppins font-bold text-sm px-3 py-2 rounded transition"
+            className="bg-gray-500 text-white font-poppins font-bold text-sm px-3 py-2 rounded cursor-not-allowed opacity-50"
+            disabled
           >
-            {event.button}
+            Registration Closed
           </button>
         ) : (
           <button
@@ -249,7 +220,7 @@ function TimelineCard({ event, registerButtonRef }) {
                     "https://forms.google.com/your-form-url",
                     "_blank"
                   )
-            } // Replace with your actual Google Form URL
+            }
             disabled={
               event.title === "Workshop" ||
               event.title === "Awareness Session" ||

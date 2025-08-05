@@ -54,10 +54,10 @@ const Home = ({ registerButtonRef }) => {
               />
               <button
                 ref={registerButtonRef}
-                onClick={togglePopup}
-                className="font-transrobotics bg-gradient-to-r from-sky-500 to-sky-700 text-white rounded-[54px] px-6 py-3 hover:bg-gradient-to-r hover:from-white hover:to-sky-400 hover:text-blue-600 border-none"
+                //onClick={togglePopup}
+                className="font-transrobotics bg-gradient-to-r from-red-700 to-red-700 text-white rounded-[54px] px-6 py-3 border-none cursor-not-allowed opacity-50"
               >
-                Register
+                Registration Closed
               </button>
             </div>
           </div>
