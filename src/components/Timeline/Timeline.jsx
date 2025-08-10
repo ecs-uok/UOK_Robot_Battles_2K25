@@ -24,8 +24,8 @@ const events = [
     title: "Workshop",
     description:
       "Join the official pre-battle workshop. Get guidance, tips, and insights from pros to level up your game.",
-    button: "Learn More",
-    buttonColor: "bg-green-800 {/*hover:bg-green-600*/}",
+    button: "Join Session Via Zoom",
+    buttonColor: "bg-green-600 hover:bg-green-500",
     image: "/Timeline/Icon3.png",
   },
   {
@@ -185,6 +185,11 @@ function TimelineCard({ event, registerButtonRef }) {
       <p className="text-xs md:text-base mb-3 font-poppins">
         {event.description}
       </p>
+      {event.title === "Workshop" && (
+        <p className="text-xs md:text-base mb-3 font-poppins text-blue-400">
+          Time: 7.00 PM – 9.00 PM
+        </p>
+      )}
       <div className="flex flex-col md:flex-row md:items-center md:space-x-2">
         {event.title === "Registration closing" ? (
           <button
@@ -204,25 +209,30 @@ function TimelineCard({ event, registerButtonRef }) {
           <button
             className={`${
               event.buttonColor
-            } font-poppins font-bold text-gray-400 text-sm px-3 py-2 rounded ${
-              event.title === "Workshop" ||
-              event.title === "Awareness Session" ||
-              event.title === "Battle Day"
-                ? "hover:bg-none cursor-not-allowed"
-                : "transition"
+            } font-poppins font-bold text-sm px-3 py-2 rounded ${
+              event.title === "Workshop"
+                ? "text-white transition"
+                : event.title === "Awareness Session" ||
+                  event.title === "Battle Day"
+                ? "text-gray-400 hover:bg-none cursor-not-allowed"
+                : "text-gray-400 transition"
             }`}
-            onClick={() =>
-              event.title === "Workshop" ||
-              event.title === "Awareness Session" ||
-              event.title === "Battle Day"
-                ? null
-                : window.open(
-                    "https://forms.google.com/your-form-url",
-                    "_blank"
-                  )
-            }
+            onClick={() => {
+              if (event.title === "Workshop") {
+                window.open(
+                  "https://zoom.us/j/95862962013?pwd=1vDaBwQIAekDUmqTRu0DHb4ZqIsHiw.1",
+                  "_blank"
+                );
+              } else if (
+                event.title === "Awareness Session" ||
+                event.title === "Battle Day"
+              ) {
+                return null;
+              } else {
+                window.open("https://forms.google.com/your-form-url", "_blank");
+              }
+            }}
             disabled={
-              event.title === "Workshop" ||
               event.title === "Awareness Session" ||
               event.title === "Battle Day"
             }
@@ -230,8 +240,7 @@ function TimelineCard({ event, registerButtonRef }) {
             {event.button}
           </button>
         )}
-        {(event.title === "Workshop" ||
-          event.title === "Awareness Session" ||
+        {(event.title === "Awareness Session" ||
           event.title === "Battle Day") && (
           <p className="text-xs md:text-base font-poppins text-red-400 mt-2 md:mt-0">
             Available Soon
