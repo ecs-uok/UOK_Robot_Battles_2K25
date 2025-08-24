@@ -29,7 +29,7 @@ const events = [
     image: "/Timeline/Icon3.png",
   },
   {
-    date: "2025 August 30",
+    date: "2025 September 13",
     title: "Awareness Session",
     description:
       "Everything you need to know, from rules to strategies. Join us and gear up with confidence.",
