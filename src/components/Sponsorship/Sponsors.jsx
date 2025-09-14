@@ -5,6 +5,8 @@ import sponsorLogo3 from "/public/SponsorsLogo/Hack_SL.png";
 import sponsorLogo4 from "/public/SponsorsLogo/Codechefs.png";
 import sponsorLogo5 from "/public/SponsorsLogo/IEEE.png";
 import sponsorLogo6 from "/public/SponsorsLogo/Gavel.png";
+import sponsorLogo7 from "/public/SponsorsLogo/XYDDER_3D.png";
+import sponsorLogo8 from "/public/SponsorsLogo/None.svg";
 
 const sponsors = [
   {
@@ -43,6 +45,18 @@ const sponsors = [
     logo: sponsorLogo6,
     link: "https://web.facebook.com/uokgavelclub",
   },
+  {
+    id: 7,
+    name: "XYDDER 3D",
+    logo: sponsorLogo8,
+    link: "https://web.facebook.com/uokgavelclub",
+  },
+  {
+    id: 8,
+    name: "XYDDER 3D",
+    logo: sponsorLogo7,
+    link: "https://web.facebook.com/uokgavelclub",
+  },
 ];
 
 const SponsorsSection = () => {
@@ -72,7 +86,7 @@ const SponsorsSection = () => {
         <h1 className="font-transrobotics text-3xl md:text-4xl justify-center items-center content-center px-10 flex text-center md:text-start md:flex text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] to-[#999999]">
           OUR PARTNERS
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 px-3 md:px-1 justify-items-center">
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-3 md:gap-4 px-3 md:px-1 justify-items-center">
           {sponsors.map((sponsor, index) => (
             <a
               key={sponsor.id}
