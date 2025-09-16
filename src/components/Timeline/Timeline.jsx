@@ -34,7 +34,7 @@ const events = [
     description:
       "Everything you need to know, from rules to strategies. Join us and gear up with confidence.",
     button: "Join Session",
-    buttonColor: "bg-yellow-800 {/*hover:bg-yellow-600*/} text-black",
+    buttonColor: "bg-yellow-600 hover:bg-yellow-500 text-white transition",
     image: "/Timeline/Icon4.png",
   },
   {
@@ -190,6 +190,11 @@ function TimelineCard({ event, registerButtonRef }) {
           Time: 7.00 PM – 9.00 PM
         </p>
       )}
+      {event.title === "Awareness Session" && (
+        <p className="text-xs md:text-base mb-3 font-poppins text-yellow-400">
+          Time: 7.00 PM – 8.00 PM
+        </p>
+      )}
       <div className="flex flex-col md:flex-row md:items-center md:space-x-2">
         {event.title === "Registration closing" ? (
           <button
@@ -212,8 +217,9 @@ function TimelineCard({ event, registerButtonRef }) {
             } font-poppins font-bold text-sm px-3 py-2 rounded ${
               event.title === "Workshop"
                 ? "text-white transition"
-                : event.title === "Awareness Session" ||
-                  event.title === "Battle Day"
+                : event.title === "Awareness Session"
+                ? "text-white transition"
+                : event.title === "Battle Day"
                 ? "text-gray-400 hover:bg-none cursor-not-allowed"
                 : "text-gray-400 transition"
             }`}
@@ -223,28 +229,21 @@ function TimelineCard({ event, registerButtonRef }) {
                   "https://zoom.us/j/95862962013?pwd=1vDaBwQIAekDUmqTRu0DHb4ZqIsHiw.1",
                   "_blank"
                 );
-              } else if (
-                event.title === "Awareness Session" ||
-                event.title === "Battle Day"
-              ) {
+              } else if (event.title === "Awareness Session") {
+                window.open(
+                  "https://zoom.us/j/98868373886?pwd=8LbY09Izpq1IcQQA3tmEPzsvImxFio.1", // <-- Replace with actual link
+                  "_blank"
+                );
+              } else if (event.title === "Battle Day") {
                 return null;
               } else {
                 window.open("https://forms.google.com/your-form-url", "_blank");
               }
             }}
-            disabled={
-              event.title === "Awareness Session" ||
-              event.title === "Battle Day"
-            }
+            disabled={event.title === "Battle Day"}
           >
             {event.button}
           </button>
-        )}
-        {(event.title === "Awareness Session" ||
-          event.title === "Battle Day") && (
-          <p className="text-xs md:text-base font-poppins text-red-400 mt-2 md:mt-0">
-            Available Soon
-          </p>
         )}
       </div>
     </div>
