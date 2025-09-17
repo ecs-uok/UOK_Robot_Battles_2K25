@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import sponsorLogo1 from "/public/SponsorsLogo/Vario-Systems.png";
 import sponsorLogo2 from "/public/SponsorsLogo/Zone24x7.png";
 import sponsorLogo3 from "/public/SponsorsLogo/Hack_SL.png";
-import sponsorLogo4 from "/public/SponsorsLogo/Codechefs.png";
+import sponsorLogo4 from "/public/SponsorsLogo/Michelin.png";
 import sponsorLogo5 from "/public/SponsorsLogo/IEEE.png";
 import sponsorLogo6 from "/public/SponsorsLogo/Gavel.png";
 import sponsorLogo7 from "/public/SponsorsLogo/XYDDER_3D.png";
@@ -16,16 +16,16 @@ const sponsors = [
     link: "https://www.variosystems.com",
   },
   {
+    id: 5,
+    name: "CodeChef",
+    logo: sponsorLogo4,
+    link: "https://www.michelin.com/en/",
+  },
+  {
     id: 2,
     name: "Zone24x7",
     logo: sponsorLogo2,
     link: "https://zone24x7.com/",
-  },
-  {
-    id: 3,
-    name: "IEEE IES University of Kelaniya",
-    logo: sponsorLogo5,
-    link: "https://www.linkedin.com/company/ieee-industrial-electronics-society-student-branch-chapter-university-of-kelaniya/",
   },
   {
     id: 4,
@@ -34,10 +34,10 @@ const sponsors = [
     link: "https://www.linkedin.com/company/hacksl/",
   },
   {
-    id: 5,
-    name: "CodeChef",
-    logo: sponsorLogo4,
-    link: "https://www.linkedin.com/company/codechefs123/",
+    id: 3,
+    name: "IEEE IES University of Kelaniya",
+    logo: sponsorLogo5,
+    link: "https://www.linkedin.com/company/ieee-industrial-electronics-society-student-branch-chapter-university-of-kelaniya/",
   },
   {
     id: 6,
@@ -49,7 +49,7 @@ const sponsors = [
     id: 7,
     name: "XYDDER 3D",
     logo: sponsorLogo8,
-    link: "https://web.facebook.com/uokgavelclub",
+    link: "https://xydder3d.lk/",
   },
   {
     id: 8,
