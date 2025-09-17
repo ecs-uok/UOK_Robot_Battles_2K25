@@ -33,7 +33,7 @@ const events = [
     title: "Awareness Session",
     description:
       "Everything you need to know, from rules to strategies. Join us and gear up with confidence.",
-    button: "Join Session",
+    button: "Join Session Via Zoom",
     buttonColor: "bg-yellow-600 hover:bg-yellow-500 text-white transition",
     image: "/Timeline/Icon4.png",
   },
@@ -210,31 +210,31 @@ function TimelineCard({ event, registerButtonRef }) {
           >
             Registration Closed
           </button>
+        ) : event.title === "Awareness Session" ? (
+          <button
+            className="bg-gray-500 text-white font-poppins font-bold text-sm px-3 py-2 rounded cursor-not-allowed opacity-50"
+            disabled
+          >
+            Join Session Via Zoom
+          </button>
+        ) : event.title === "Workshop" ? (
+          <button
+            className="bg-gray-500 text-white font-poppins font-bold text-sm px-3 py-2 rounded cursor-not-allowed opacity-50"
+            disabled
+          >
+            Join Session Via Zoom
+          </button>
         ) : (
           <button
             className={`${
               event.buttonColor
             } font-poppins font-bold text-sm px-3 py-2 rounded ${
-              event.title === "Workshop"
-                ? "text-white transition"
-                : event.title === "Awareness Session"
-                ? "text-white transition"
-                : event.title === "Battle Day"
+              event.title === "Battle Day"
                 ? "text-gray-400 hover:bg-none cursor-not-allowed"
                 : "text-gray-400 transition"
             }`}
             onClick={() => {
-              if (event.title === "Workshop") {
-                window.open(
-                  "https://zoom.us/j/95862962013?pwd=1vDaBwQIAekDUmqTRu0DHb4ZqIsHiw.1",
-                  "_blank"
-                );
-              } else if (event.title === "Awareness Session") {
-                window.open(
-                  "https://zoom.us/j/98868373886?pwd=8LbY09Izpq1IcQQA3tmEPzsvImxFio.1", // <-- Replace with actual link
-                  "_blank"
-                );
-              } else if (event.title === "Battle Day") {
+              if (event.title === "Battle Day") {
                 return null;
               } else {
                 window.open("https://forms.google.com/your-form-url", "_blank");
@@ -244,6 +244,11 @@ function TimelineCard({ event, registerButtonRef }) {
           >
             {event.button}
           </button>
+        )}
+        {event.title === "Battle Day" && (
+          <p className="text-xs md:text-base font-poppins text-red-400 mt-2 md:mt-0">
+            Available Soon
+          </p>
         )}
       </div>
     </div>
