@@ -2,44 +2,23 @@
 
 A dynamic and interactive website for the UOK Robot Battles 2K25 competition, hosted by the Electronics and Computer Science Club (ECSC) of the University of Kelaniya.
 
-## 🏆 About the Competition
-
-UOK Robot Battles 2K25 is an electrifying robotics competition that brings together engineering enthusiasts from universities, schools, and independent participants. Building upon the success of its inaugural event, this year's competition features two exciting categories:
-
-### Competition Categories
-
-**🔧 Lightweight Division (Open to All)**
-
-- Maximum Weight: 2.5 KG
-- Maximum Dimensions: 25 CM × 25 CM
-- Prize Pool: Winner (LKR 30,000 + Giant Nut), 1st Runner-up (LKR 20,000), 2nd Runner-up (LKR 10,000)
-
-**⚡ Heavyweight Division (Students Only)**
-
-- Maximum Weight: 15 KG
-- Maximum Dimensions: 45 CM × 45 CM
-- Prize Pool: Winner (LKR 75,000 + Giant Nut), 1st Runner-up (LKR 50,000), 2nd Runner-up (LKR 30,000)
-
 ## 🚀 Features
 
-- **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
+- **Responsive Design**: Optimized for all devices
 - **Interactive Timeline**: Event schedule with smooth animations
 - **Prize Information**: Detailed prize structure for both categories
 - **Rules & Regulations**: Comprehensive competition guidelines
 - **Team Showcase**: Meet the organizing team
 - **Gallery**: Photo gallery from previous events
-- **Contact Integration**: Direct contact with organizers
 - **Sponsor Display**: Partner and sponsor showcase
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework**: React 18.2.0
-- **Build Tool**: Vite 5.2.11
+- **Frontend**: React 18.2.0 with Vite
 - **Styling**: Tailwind CSS 3.4.3
 - **Routing**: React Router DOM 6.23.1
 - **Icons**: React Icons 5.2.1
-- **Slider Component**: Swiper 11.2.6
-- **Font Loading**: Custom fonts (SF TransRobotics, Poppins, Bebas Neue)
+- **Slider**: Swiper 11.2.6
 
 ## 📦 Installation
 
@@ -165,23 +144,6 @@ For any inquiries related to the competition or website:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📄 License
-
-© 2025 Electronics and Computer Science Club (ECSC) - University of Kelaniya. All rights reserved.
-
-## 🔗 Links
-
-- **Website**: [robotbattles.ecsc-uok.com](https://robotbattles.ecsc-uok.com/)
-- **University**: [University of Kelaniya](https://www.kln.ac.lk/)
-- **ECSC Club**: [ecsc-uok.com](https://ecsc-uok.com/)
-- **Facebook**: [UOK Robot Battles](https://www.facebook.com/UOKRobotBattles)
-- **Instagram**: [@ecsc_uok](https://www.instagram.com/ecsc_uok/)
-- **WhatsApp Channel**: [Join Channel](https://whatsapp.com/channel/0029Vb82ayPK5cDJwkQkw53u)
-
----
-
-**Built with ❤️ by the ECSC Development Team**
 
 ## 📄 License
 

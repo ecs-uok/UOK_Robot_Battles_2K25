@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
-import logo from "../../../public/Branding/Home-Logo.png"; // Adjust path as needed
+import logo from "/Branding/Home-Logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("/#home");
+  const [scrollDetectionEnabled, setScrollDetectionEnabled] = useState(true);
+  const scrollTimeoutRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,20 +18,15 @@ const Navbar = () => {
     setIsOpen(false);
 
     // Disable scroll detection temporarily to prevent it from overriding the clicked link
-    if (window.scrollDetectionTimeout) {
-      clearTimeout(window.scrollDetectionTimeout);
+    if (scrollTimeoutRef.current) {
+      clearTimeout(scrollTimeoutRef.current);
     }
 
-    window.scrollDetectionEnabled = false;
-    window.scrollDetectionTimeout = setTimeout(() => {
-      window.scrollDetectionEnabled = true;
+    setScrollDetectionEnabled(false);
+    scrollTimeoutRef.current = setTimeout(() => {
+      setScrollDetectionEnabled(true);
     }, 1000); // Re-enable scroll detection after 1 second
   };
-
-  // Initialize scroll detection enabled state
-  useEffect(() => {
-    window.scrollDetectionEnabled = true;
-  }, []);
 
   // Set up scroll event to detect which section is currently in view
   useEffect(() => {
@@ -45,7 +42,7 @@ const Navbar = () => {
     // Function to determine which section is in view
     const handleScroll = () => {
       // Skip if scroll detection is disabled (right after a link click)
-      if (window.scrollDetectionEnabled === false) {
+      if (!scrollDetectionEnabled) {
         return;
       }
       // Get all section elements
@@ -97,7 +94,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [scrollDetectionEnabled]);
 
   // Set active link based on URL hash on initial load
   useEffect(() => {
@@ -230,7 +227,5 @@ const NavLink = ({ to, children, activeLink, onClick }) => {
     </Link>
   );
 };
-
-
 
 export default Navbar;

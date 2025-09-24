@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
-import sponsorLogo1 from "/public/SponsorsLogo/Vario-Systems.png";
-import sponsorLogo2 from "/public/SponsorsLogo/Zone24x7.png";
-import sponsorLogo3 from "/public/SponsorsLogo/Hack_SL.png";
-import sponsorLogo4 from "/public/SponsorsLogo/Michelin.png";
-import sponsorLogo5 from "/public/SponsorsLogo/IEEE.png";
-import sponsorLogo6 from "/public/SponsorsLogo/Gavel.png";
-import sponsorLogo7 from "/public/SponsorsLogo/XYDDER_3D.png";
-import sponsorLogo8 from "/public/SponsorsLogo/None.svg";
+import sponsorLogo1 from "/SponsorsLogo/Vario-Systems.png";
+import sponsorLogo2 from "/SponsorsLogo/Zone24x7.png";
+import sponsorLogo3 from "/SponsorsLogo/Hack_SL.png";
+import sponsorLogo4 from "/SponsorsLogo/Michelin.png";
+import sponsorLogo5 from "/SponsorsLogo/IEEE.png";
+import sponsorLogo6 from "/SponsorsLogo/Gavel.png";
+import sponsorLogo7 from "/SponsorsLogo/XYDDER_3D.png";
+import sponsorLogo8 from "/SponsorsLogo/None.svg";
 
 const sponsors = [
   {

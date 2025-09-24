@@ -5,12 +5,12 @@ import "swiper/css";
 import "swiper/css/autoplay";
 
 // Import images
-import Person0 from "../../../public/People/TR.png"; // Updated path
-import Person1 from "../../../public/People/PM1.png";
-import Person2 from "../../../public/People/PM2.png"; // Updated path
-import Person3 from "../../../public/People/PM3.png"; // Updated path
-import Person4 from "../../../public/People/ER1.png"; // Updated path
-import Person5 from "../../../public/People/ER2.png"; // Updated path
+import Person0 from "/People/TR.png";
+import Person1 from "/People/PM1.png";
+import Person2 from "/People/PM2.png";
+import Person3 from "/People/PM3.png";
+import Person4 from "/People/ER1.png";
+import Person5 from "/People/ER2.png";
 
 const teamMembers = [
   {

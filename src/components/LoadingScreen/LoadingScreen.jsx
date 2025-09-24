@@ -1,5 +1,5 @@
 import React from "react";
-import HomeLogo from "/public/Branding/Home-Logo.png"; // Import the logo
+import HomeLogo from "/Branding/Home-Logo.png";
 
 const LoadingScreen = () => {
   return (

@@ -43,7 +43,7 @@ const events = [
     description:
       "The bots are built, the arena awaits. Greatness shows no mercy. Only one will reign supreme",
     button: "View Details",
-    buttonColor: "bg-purple-800 {/*hover:bg-purple-600*/}",
+    buttonColor: "bg-purple-800",
     image: "/Timeline/Icon5.png",
   },
 ];
@@ -230,7 +230,7 @@ function TimelineCard({ event, registerButtonRef }) {
               event.buttonColor
             } font-poppins font-bold text-sm px-3 py-2 rounded ${
               event.title === "Battle Day"
-                ? "text-gray-400 hover:bg-none cursor-not-allowed"
+                ? "text-gray-400 cursor-not-allowed"
                 : "text-gray-400 transition"
             }`}
             onClick={() => {

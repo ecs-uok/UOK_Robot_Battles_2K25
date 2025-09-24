@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Button from "../Button/Button";
 import Popup from "../Popup/Popup";
-import homeLogo from "/public/Branding/Home-Logo.png";
+import homeLogo from "/Branding/Home-Logo.png";
 
 const Home = ({ registerButtonRef }) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -50,12 +50,12 @@ const Home = ({ registerButtonRef }) => {
                 url={
                   "https://drive.google.com/uc?export=download&id=1J4K3i-Fp08ETvQYVA1MEY5Mhj39qr1Uf"
                 }
-                className="font-transrobotics text-grey-100 bg-gradient-to-r from-white to-sky-100 hover:text-blue-600 rounded-[54px] px-6 py-3 hover:bg-gradient-to-r hover:from-white hover:text-blue-600 hover:to-sky-400 border-none"
+                className="font-transrobotics text-gray-800 bg-gradient-to-r from-white to-sky-100 hover:text-blue-600 rounded-[54px] px-6 py-3 hover:bg-gradient-to-r hover:from-white hover:to-sky-400 border-none"
               />
               <button
                 ref={registerButtonRef}
-                //onClick={togglePopup}
-                className="font-transrobotics bg-gradient-to-r from-red-700 to-red-700 text-white rounded-[54px] px-6 py-3 border-none cursor-not-allowed opacity-50"
+                disabled
+                className="font-transrobotics bg-gray-500 text-white rounded-[54px] px-6 py-3 cursor-not-allowed opacity-50"
               >
                 Registration Closed
               </button>

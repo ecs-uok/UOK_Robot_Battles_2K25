@@ -4,16 +4,16 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 
-import image1 from "../../../public/Gallery/1.jpg";
-import image2 from "../../../public/Gallery/2.jpg";
-import image3 from "../../../public/Gallery/3.jpg";
-import image4 from "../../../public/Gallery/4.jpg";
-import image5 from "../../../public/Gallery/5.jpg";
-import image6 from "../../../public/Gallery/6.jpg";
-import image7 from "../../../public/Gallery/7.jpg";
-import image8 from "../../../public/Gallery/8.jpg";
-import image9 from "../../../public/Gallery/9.jpg";
-import image10 from "../../../public/Gallery/10.jpg";
+import image1 from "/Gallery/1.jpg";
+import image2 from "/Gallery/2.jpg";
+import image3 from "/Gallery/3.jpg";
+import image4 from "/Gallery/4.jpg";
+import image5 from "/Gallery/5.jpg";
+import image6 from "/Gallery/6.jpg";
+import image7 from "/Gallery/7.jpg";
+import image8 from "/Gallery/8.jpg";
+import image9 from "/Gallery/9.jpg";
+import image10 from "/Gallery/10.jpg";
 
 const topImages = [image1, image2, image3, image4, image5];
 const bottomImages = [image6, image7, image8, image9, image10];

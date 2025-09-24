@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import gaintnut from "/public/PrizesImages/GaintNut.svg";
+import gaintnut from "/PrizesImages/GaintNut.svg";
 
 const WinningPrizes = () => {
   const containerRef = useRef(null);
