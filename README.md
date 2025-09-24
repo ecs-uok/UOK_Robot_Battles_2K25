@@ -156,7 +156,7 @@ For any inquiries related to the competition or website:
 
 **Website Developer**:
 
-- Rusiru Randika - [GitHub](https://github.com/Rusiru-Randika) | [LinkedIn](https://linkedin.com/in/rusiru-randika) | Email: rusirurandika@gmail.com
+- Rusiru Randika - [GitHub](https://github.com/Rusiru-Randika) | [LinkedIn](https://linkedin.com/in/rusiru-randika) | Email: rusirurandikakmv@gmail.com
 
 ## 🤝 Contributing
 
@@ -199,3 +199,4 @@ For any inquiries related to the competition or website:
 ---
 
 **Built with ❤️ by the ECSC Development Team**
+
