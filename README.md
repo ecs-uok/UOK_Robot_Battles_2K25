@@ -182,21 +182,3 @@ For any inquiries related to the competition or website:
 ---
 
 **Built with ❤️ by the ECSC Development Team**
-
-## 📄 License
-
-© 2025 Electronics and Computer Science Club (ECSC) - University of Kelaniya. All rights reserved.
-
-## 🔗 Links
-
-- **Website**: [robotbattles.ecsc-uok.com](https://robotbattles.ecsc-uok.com/)
-- **University**: [University of Kelaniya](https://www.kln.ac.lk/)
-- **ECSC Club**: [ecsc-uok.com](https://ecsc-uok.com/)
-- **Facebook**: [UOK Robot Battles](https://www.facebook.com/UOKRobotBattles)
-- **Instagram**: [@ecsc_uok](https://www.instagram.com/ecsc_uok/)
-- **WhatsApp Channel**: [Join Channel](https://whatsapp.com/channel/0029Vb82ayPK5cDJwkQkw53u)
-
----
-
-**Built with ❤️ by the ECSC Development Team**
-
