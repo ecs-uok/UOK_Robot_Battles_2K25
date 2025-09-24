@@ -154,25 +154,9 @@ For any inquiries related to the competition or website:
 - Chamoda Dasanayake - dasanay-ec21074@stu.kln.ac.lk
 - Vishwa Rajarathne - rajarat-ec21009@stu.kln.ac.lk
 
-## 👥 Collaborators
+**Website Developer**:
 
-- **Lead Developer**: [Rusiru Randika](https://github.com/Rusiru-Randika) - Full-stack development, UI/UX design, and project architecture
-
-### Special Thanks
-
-- **ECSC Committee Members** - For providing guidance and feedback throughout development
-- **Beta Testers** - University students who helped test the website functionality
-- **Graphics Team** - For creating logos, icons, and visual assets
-- **Photography Team** - For capturing and providing gallery images from previous events
-
-### Contributing Guidelines
-
-We welcome contributions from the community! If you'd like to contribute:
-
-1. Check the [Contributing](#🤝-contributing) section for development setup
-2. Review open issues and feature requests
-3. Submit pull requests with clear descriptions
-4. Follow our coding standards and design guidelines
+- Rusiru Randika - [GitHub](https://github.com/Rusiru-Randika) | [LinkedIn](https://linkedin.com/in/rusiru-randika) | Email: rusirurandika@gmail.com
 
 ## 🤝 Contributing
 
@@ -181,6 +165,23 @@ We welcome contributions from the community! If you'd like to contribute:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## 📄 License
+
+© 2025 Electronics and Computer Science Club (ECSC) - University of Kelaniya. All rights reserved.
+
+## 🔗 Links
+
+- **Website**: [robotbattles.ecsc-uok.com](https://robotbattles.ecsc-uok.com/)
+- **University**: [University of Kelaniya](https://www.kln.ac.lk/)
+- **ECSC Club**: [ecsc-uok.com](https://ecsc-uok.com/)
+- **Facebook**: [UOK Robot Battles](https://www.facebook.com/UOKRobotBattles)
+- **Instagram**: [@ecsc_uok](https://www.instagram.com/ecsc_uok/)
+- **WhatsApp Channel**: [Join Channel](https://whatsapp.com/channel/0029Vb82ayPK5cDJwkQkw53u)
+
+---
+
+**Built with ❤️ by the ECSC Development Team**
 
 ## 📄 License
 
