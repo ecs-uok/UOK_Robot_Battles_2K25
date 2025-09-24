@@ -156,13 +156,7 @@ For any inquiries related to the competition or website:
 
 ## 👥 Collaborators
 
-### Development Team
-
-- **Lead Developer**: [Rusiru Gunathilaka](https://github.com/rusiru-dev) - Full-stack development, UI/UX design, and project architecture
-- **Project Coordinator**: Dr Kasun Piyumal - Senior Treasurer, ECSC
-- **Content Manager**: Supun Tharaka - Project Manager, content creation and review
-- **Design Consultant**: Maneesha Gunarathna - Project Manager, design feedback and testing
-- **Technical Advisor**: Kavindu Pabasara - Project Manager, technical specifications and requirements
+- **Lead Developer**: [Rusiru Randika](https://github.com/Rusiru-Randika) - Full-stack development, UI/UX design, and project architecture
 
 ### Special Thanks
 
