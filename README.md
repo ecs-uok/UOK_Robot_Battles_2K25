@@ -154,6 +154,32 @@ For any inquiries related to the competition or website:
 - Chamoda Dasanayake - dasanay-ec21074@stu.kln.ac.lk
 - Vishwa Rajarathne - rajarat-ec21009@stu.kln.ac.lk
 
+## 👥 Collaborators
+
+### Development Team
+
+- **Lead Developer**: [Rusiru Gunathilaka](https://github.com/rusiru-dev) - Full-stack development, UI/UX design, and project architecture
+- **Project Coordinator**: Dr Kasun Piyumal - Senior Treasurer, ECSC
+- **Content Manager**: Supun Tharaka - Project Manager, content creation and review
+- **Design Consultant**: Maneesha Gunarathna - Project Manager, design feedback and testing
+- **Technical Advisor**: Kavindu Pabasara - Project Manager, technical specifications and requirements
+
+### Special Thanks
+
+- **ECSC Committee Members** - For providing guidance and feedback throughout development
+- **Beta Testers** - University students who helped test the website functionality
+- **Graphics Team** - For creating logos, icons, and visual assets
+- **Photography Team** - For capturing and providing gallery images from previous events
+
+### Contributing Guidelines
+
+We welcome contributions from the community! If you'd like to contribute:
+
+1. Check the [Contributing](#🤝-contributing) section for development setup
+2. Review open issues and feature requests
+3. Submit pull requests with clear descriptions
+4. Follow our coding standards and design guidelines
+
 ## 🤝 Contributing
 
 1. Fork the repository
